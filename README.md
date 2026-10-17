@@ -8,7 +8,6 @@ A responsive personal portfolio website built with **HTML, CSS, and vanilla Java
 - **GitHub:** https://github.com/rishikasingh-07
 - **LinkedIn:** https://www.linkedin.com/in/rishika-singh07
 
-> If the live URL is changed, update the Portfolio link above.
 
 ## Features
 
