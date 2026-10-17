@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rishika Singh | Data Science &amp; AI/ML</title>
+  <meta name="description" content="Portfolio of Rishika Singh, a B.Tech Data Science student who loves machine learning and AI.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=JetBrains+Mono:wght@400&family=Karla:ital,wght@0,400;0,500;1,400&family=Young+Serif&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="paw" viewBox="0 0 24 24">
+      <ellipse cx="12" cy="16" rx="6.5" ry="5.2"/>
+      <circle cx="5" cy="10" r="2.5"/>
+      <circle cx="10" cy="5.5" r="2.5"/>
+      <circle cx="15" cy="5.5" r="2.5"/>
+      <circle cx="20" cy="10" r="2.5"/>
+    </symbol>
+    <symbol id="star" viewBox="0 0 24 24">
+      <path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5Z"/>
+    </symbol>
+  </svg>
+
+  <div class="layout">
+
+    <aside>
+      <a class="name" href="#top">Rishika<br>Singh</a>
+      <p class="role">b.tech data science<br>nmims mumbai · 2028</p>
+
+      <nav>
+        <a href="#about"><span>01</span>about</a>
+        <a href="#projects"><span>02</span>projects</a>
+        <a href="#skills"><span>03</span>skills</a>
+        <a href="#offduty"><span>04</span>off duty</a>
+        <a href="#contact"><span>05</span>contact</a>
+      </nav>
+
+      <button id="theme" aria-label="Switch between light and dark theme">switch to dark</button>
+    </aside>
+
+    <main id="top">
+
+
+      <section class="hero">
+        <svg class="spark" style="left:46%; top:34px"><use href="#star"/></svg>
+        <svg class="spark" style="right:8%; top:120px; animation-delay:1s"><use href="#star"/></svg>
+        <svg class="spark" style="left:-4px; top:150px; animation-delay:2s"><use href="#star"/></svg>
+
+        <p class="hi">hi, I'm Rishika.</p>
+        <h1>I teach computers to find the <u>signal</u> in the noise.</h1>
+        <p class="lead">
+          Third-year data science student in Mumbai. I love machine learning and AI,
+          especially LLMs, and building things that actually use them.
+        </p>
+
+        <figure>
+
+          <button class="kitw k-hero" data-say="mew!|purr…|feed me|meow~|more pets?|♥">
+            <span class="bub">mew!</span>
+            <svg id="herocat" viewBox="0 0 120 112" role="img" aria-label="Cartoon kitten. Click it for a meow.">
+              <path class="tail st" fill="none" d="M88 92 C112 92 118 66 106 54"/>
+              <ellipse class="fur st" cx="60" cy="84" rx="30" ry="22"/>
+              <g class="ear">
+                <path class="fur st" d="M34 36 L36 8 L56 26Z"/>
+                <path class="pk" d="M39 30 L40 16 L50 26Z"/>
+              </g>
+              <g class="ear" style="animation-delay:2.5s">
+                <path class="fur st" d="M86 36 L84 8 L64 26Z"/>
+                <path class="pk" d="M81 30 L80 16 L70 26Z"/>
+              </g>
+              <circle class="fur st" cx="60" cy="50" r="27"/>
+              <path class="stp" d="M60 24 V32 M52 26 L53 33 M68 26 L67 33"/>
+              <g class="eyes">
+                <ellipse class="eye ink" cx="49" cy="50" rx="3.6" ry="5"/>
+                <ellipse class="eye ink" cx="71" cy="50" rx="3.6" ry="5"/>
+              </g>
+              <path class="pk" d="M56 58 L64 58 L60 63Z"/>
+              <path class="st" fill="none" d="M60 63 Q56 68 51 65 M60 63 Q64 68 69 65"/>
+              <path class="st" fill="none" style="stroke-width:1.2" d="M40 60 L24 57 M40 64 L25 67 M80 60 L96 57 M80 64 L95 67"/>
+              <ellipse class="fur st" cx="47" cy="104" rx="9" ry="5.5"/>
+              <ellipse class="fur st" cx="73" cy="104" rx="9" ry="5.5"/>
+            </svg>
+          </button>
+
+          
+          <p class="demo-title">pluck a string <span>(sound on)</span></p>
+
+          <div class="strings" role="group" aria-label="Guitar strings">
+            <button type="button" data-hz="82.41">E</button>
+            <button type="button" data-hz="110">A</button>
+            <button type="button" data-hz="146.83">D</button>
+            <button type="button" data-hz="196">G</button>
+            <button type="button" data-hz="246.94">B</button>
+            <button type="button" data-hz="329.63">e</button>
+          </div>
+
+          <canvas id="wave" aria-label="Live waveform and frequency spectrum of the string you plucked"></canvas>
+
+          <div class="pipe" aria-hidden="true">
+            <span>waveform</span><i>→</i><span>FFT</span><i>→</i><span>features</span><i>→</i><span>prediction</span>
+          </div>
+
+          <p class="hear" id="hear" aria-live="polite">the model hears: nothing yet</p>
+          <figcaption>fig. 1 – a tiny "ear" for machines: sound becomes a signal, the signal becomes features, and features become a guess</figcaption>
+        </figure>
+      </section>
+
+
+      <section id="about" class="rv">
+
+        <button class="kitw k-peek" data-say="peekaboo!|hi!|boop|hehe">
+          <span class="bub">peekaboo!</span>
+          <svg viewBox="0 0 100 50" style="--f:var(--fur2)" aria-label="Kitten peeking over the edge">
+            <g class="ear">
+              <path class="fur st" d="M20 30 L22 6 L40 20Z"/>
+              <path class="pk" d="M25 25 L26 13 L34 20Z"/>
+            </g>
+            <g class="ear" style="animation-delay:3s">
+              <path class="fur st" d="M80 30 L78 6 L60 20Z"/>
+              <path class="pk" d="M75 25 L74 13 L66 20Z"/>
+            </g>
+            <circle class="fur st" cx="50" cy="34" r="26"/>
+            <path class="stp" d="M50 10 V17 M43 12 L44 18 M57 12 L56 18"/>
+            <g class="eyes">
+              <ellipse class="eye ink" cx="40" cy="32" rx="3.4" ry="4.6"/>
+              <ellipse class="eye ink" cx="60" cy="32" rx="3.4" ry="4.6"/>
+            </g>
+            <path class="pk" d="M46 39 L54 39 L50 43Z"/>
+            <ellipse class="fur st" cx="26" cy="49" rx="9" ry="5"/>
+            <ellipse class="fur st" cx="74" cy="49" rx="9" ry="5"/>
+          </svg>
+        </button>
+
+        <h2><small>01</small>About</h2>
+
+        <div class="about">
+          <div>
+            <p>
+              I'm studying B.Tech in Data Science at NMIMS Mumbai (MPSTME). My classes run
+              from statistics and machine learning to signals and systems, but the part I
+              love most is machine learning and AI.
+            </p>
+            <p>
+              Right now I'm most excited about LLMs and retrieval-based systems. I like
+              building the whole thing end to end: the model, the API behind it and an
+              interface that people can actually use.
+            </p>
+            <p>
+              I'm always after projects that feel a little different from the usual ones,
+              and I like understanding why a model works, not just getting the number to go up.
+            </p>
+          </div>
+
+          <div class="fact">
+            <div>studying<b>Data Science</b></div>
+            <div>cgpa<b>9.56 / 10</b></div>
+            <div>favorite thing<b>ML &amp; AI</b></div>
+            <div>based in<b>Mumbai, India</b></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="rv">
+        <h2><small>02</small>Projects</h2>
+
+        <article class="proj">
+          <span class="n">01</span>
+          <div>
+            <h3>RepoGist</h3>
+            <p>
+              Ask questions about any public GitHub repository. It fetches the files, chunks and
+              embeds the code, retrieves the relevant pieces from Chroma, and has Gemini answer
+              with the source filenames. It handles follow-up questions and rewrites queries using
+              the conversation so far.
+            </p>
+            <p class="tech">python / rag / langchain / chromadb / gemini / flask</p>
+            <a class="go" href="https://repogist.onrender.com" target="_blank" rel="noopener">try it out</a>
+          </div>
+        </article>
+
+        <article class="proj">
+          <span class="n">02</span>
+          <div>
+            <h3>CinePredict</h3>
+            <p>
+              Predicts a film's box-office revenue from pre-release details using XGBoost and 40+
+              engineered features, then turns that into a success score, an ROI estimate and
+              AI-written recommendations through a React and Flask app.
+            </p>
+            <p class="tech">xgboost / feature engineering / react / flask / gemini api</p>
+            <a class="go" href="https://cinepredict-v3-1.onrender.com" target="_blank" rel="noopener">try it out</a>
+          </div>
+        </article>
+
+        <article class="proj">
+          <span class="n">03</span>
+          <div>
+            <h3>Hawkes Process Seizure Early Warning</h3>
+            <p>
+              A probabilistic model for scalp EEG: a self-exciting Hawkes process fitted with
+              maximum likelihood, with a sliding-window warning rule that adapts to each patient.
+              Tested on CHB-MIT recordings, then used to work out when the method is reliable and
+              when it isn't.
+            </p>
+            <p class="tech">python / mle / probabilistic modeling / signal processing</p>
+            <a class="go" href="https://github.com/rishikasingh-07/hawkes-process-seizure-detection" target="_blank" rel="noopener">view code</a>
+          </div>
+        </article>
+      </section>
+
+
+      <section id="skills" class="rv">
+
+        <button class="kitw k-loaf" data-say="prrrr…|purrrr|loaf mode|zzz…">
+          <span class="bub">prrrr…</span>
+          <svg viewBox="0 0 140 72" style="--f:var(--fur3)" aria-label="Kitten loafing on the panel">
+            <path class="st" fill="none" d="M126 60 Q142 56 136 40"/>
+            <g class="body">
+              <path class="fur st" d="M30 64 C26 34 60 24 92 26 C124 28 134 48 130 64Z"/>
+            </g>
+            <path class="stp" d="M84 30 Q88 38 86 44 M98 31 Q102 39 100 45 M112 34 Q116 41 114 47"/>
+            <path class="fur st" d="M18 32 L20 8 L36 22Z"/>
+            <path class="fur st" d="M54 32 L52 8 L36 22Z"/>
+            <circle class="fur st" cx="36" cy="40" r="20"/>
+            <path class="st" fill="none" d="M26 41 Q30 35 34 41 M40 41 Q44 35 48 41"/>
+            <path class="pk" d="M33 47 L39 47 L36 51Z"/>
+            <ellipse class="fur st" cx="30" cy="65" rx="9" ry="5"/>
+            <ellipse class="fur st" cx="52" cy="65" rx="9" ry="5"/>
+          </svg>
+        </button>
+
+        <h2><small>03</small>Skills</h2>
+
+        <dl>
+          <dt>ai</dt>
+          <dd>RAG, LLM APIs, LangChain, embeddings</dd>
+
+          <dt>data &amp; ml</dt>
+          <dd>Scikit-learn, Pandas, NumPy, Matplotlib</dd>
+
+          <dt>languages</dt>
+          <dd>Python, Java, SQL (MySQL)</dd>
+
+          <dt>web</dt>
+          <dd>HTML, CSS, React, Flask, REST APIs</dd>
+
+          <dt>tools</dt>
+          <dd>Git &amp; GitHub, Jupyter, VS Code</dd>
+        </dl>
+
+        <div class="certs">
+          Certifications
+          <div>Supervised Machine Learning: Regression and Classification, DeepLearning.AI &amp; Stanford Online</div>
+          <div>LangChain for LLM Application Development, DeepLearning.AI</div>
+          <div>Elements of AI, University of Helsinki</div>
+        </div>
+      </section>
+
+      <section id="offduty" class="rv">
+
+
+        <button class="kitw k-guitar" id="gk" data-say="strum strum|♪ ♫|encore!|meow-sic">
+          <span class="bub">strum strum</span>
+        </button>
+
+        <h2><small>04</small>Off duty</h2>
+        <p class="side">my current playlist, not a model</p>
+
+        <div class="track">
+          <span class="t">01</span>
+          <div>
+            <h3>Guitar</h3>
+            <p>The one kind of practice where I don't track any metrics.</p>
+          </div>
+        </div>
+
+        <div class="track">
+          <span class="t">02</span>
+          <div>
+            <h3>Watching movies</h3>
+            <p>Stories are pattern recognition too. I like picking apart what makes a film work.</p>
+          </div>
+        </div>
+
+        <div class="track">
+          <span class="t">03</span>
+          <div>
+            <h3>Cooking</h3>
+            <p>Recipes are algorithms you can taste, and I like tweaking the parameters.</p>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="contact" class="rv">
+
+        <button class="kitw k-sleep" data-say="mrrp?|5 more minutes|oh, hi!|zzz">
+          <span class="bub">mrrp?</span>
+          <svg viewBox="0 0 150 80" style="--f:var(--fur1)" aria-label="Sleeping kitten. Click to wake it.">
+            <path class="st" fill="none" d="M120 70 C146 68 148 40 128 36"/>
+            <ellipse class="fur st" cx="84" cy="56" rx="52" ry="22"/>
+            <path class="stp" d="M96 36 Q100 44 98 50 M110 38 Q114 46 112 52"/>
+            <path class="fur st" d="M20 40 L22 18 L38 32Z"/>
+            <path class="fur st" d="M52 40 L50 18 L36 32Z"/>
+            <circle class="fur st" cx="37" cy="52" r="22"/>
+            <path class="cl st" fill="none" d="M27 52 Q31 56 35 52 M42 52 Q46 56 50 52"/>
+            <g class="op">
+              <ellipse class="ink" cx="31" cy="52" rx="2.8" ry="3.8"/>
+              <ellipse class="ink" cx="46" cy="52" rx="2.8" ry="3.8"/>
+            </g>
+            <path class="pk" d="M35 59 L41 59 L38 62Z"/>
+            <ellipse class="fur st" cx="24" cy="73" rx="9" ry="5"/>
+            <text class="zz" x="64" y="24">z</text>
+            <text class="zz" x="78" y="12" style="animation-delay:1.1s">z</text>
+          </svg>
+        </button>
+
+        <h2><small>05</small>Contact</h2>
+        <p style="margin-bottom:18px">
+          Got an ML idea, an AI project or just want to chat? Write to me:
+        </p>
+
+        <a class="mail" href="mailto:rishikasinghx@gmail.com">rishikasinghx@gmail.com</a>
+
+        <div class="soc">
+          <a href="https://www.linkedin.com/in/rishika-singh07" target="_blank" rel="noopener">linkedin</a>
+          <a href="https://github.com/rishikasingh-07" target="_blank" rel="noopener">github</a>
+        </div>
+      </section>
+
+      <footer>
+        <div class="paws" aria-hidden="true">
+          <svg><use href="#paw"/></svg>
+          <svg><use href="#paw"/></svg>
+          <svg><use href="#paw"/></svg>
+          <svg><use href="#paw"/></svg>
+          <svg><use href="#paw"/></svg>
+          <svg><use href="#paw"/></svg>
+        </div>
+        designed &amp; coded by rishika · <span id="yr"></span> · psst, click around, the kittens are friendly
+      </footer>
+
+    </main>
+  </div>
+
+</body>
+</html>
