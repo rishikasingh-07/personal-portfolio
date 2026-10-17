@@ -4,7 +4,7 @@ A responsive personal portfolio website built with **HTML, CSS, and vanilla Java
 
 ## Live website
 
-- **Portfolio:** https://personal-portfolio-guyc4p7m9-rishika-103c.vercel.app/
+- **Portfolio:** https://personal-portfolio-iota-khaki-53.vercel.app
 - **GitHub:** https://github.com/rishikasingh-07
 - **LinkedIn:** https://www.linkedin.com/in/rishika-singh07
 
